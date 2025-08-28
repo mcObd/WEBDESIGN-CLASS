@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 1.5rem;
+    font-family: cursive;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: grid;
+    place-content: center;
+    color: white;
+  }
+  
+  
+  /* Transitions */
+  /* transition animates changes to a property over time, instead of happening instantly. */
+  div:hover{
+      background-color: darkgoldenrod;
+      /* transition-property: background-color;
+      transition-duration: 2s;
+      transition-delay: 0.5s ; */
+  
+    /* transition: property duration timing-function delay  */
+      transition: all 2s 0.5s;
+  }
+  
+  /* Animations */
+  /* An animation lets an element gradually change from one style to another. */
+  
+  /* the transform property */
+  /* the translate, rotate, skew, scale values */
+  
+  div:first-child{
+      background-color: darkblue;
+      /* transform: translateX(-50%); */
+      /* transform: rotateX(0deg); */
+  
+  }
+  
+  div:nth-child(2){
+      background-color: darkgreen;
+      /* transform: translateY(50%); */
+  
+  }
+  
+  div:last-child{
+      background-color: darkred;
+       /* transform: translate(X, Y); */
+      /* transform: translate(100%, -2rem); */
+  
+      /* transform: rotate(X, Y); */
+      /* transform: rotateZ(-0deg); */
+  }
+  /* 
+  div:first-child:hover{
+      transform: scale(120%);
+      transition: transform infinite;
+  }
+  
+  div:nth-child(2):hover{
+      transform: skewY(-10deg);
+      transition: transform infinite;
+  } */
+  
+  div:last-child:hover{
+      transform: rotate(180deg);
+  }
+  
+  .animate{
+      animation-name: demo ;
+      animation-duration: 10s;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-iteration-count: 3;
+      animation-fill-mode: forwards;
+  }
+  
+  @keyframes demo {
+     0%{
+      /* At the start */
+      transform: translateX(0);
+      background-image: url(../Images/house.jpg);
+      background-size: cover;
+      background-position: center;
+     }
+     33%{
+      /* Towards the half way */
+       transform: translateX(550px) rotate(360deg) ;
+      background-image: url(../Images/house.jpg);
+      background-size: cover;
+      background-position: center;
+     }
+     66%{
+      /* Towards the end */
+       transform: translateX(-550px) rotate(-360deg) ;
+      background-image: url(../Images/brick_wall.jpg);
+      background-size: cover;
+      background-position: center;
+     }
+     100%{
+      /* At the end */
+      transform: translateX(0);
+      background-image: url(../Images/door.jpg);
+      background-size: cover;
+     } 
+  }
