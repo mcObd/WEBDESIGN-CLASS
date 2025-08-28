@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(1, 255, 255);
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+h1 + h2 {
+    text-align: center;
+}
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    align-items: center;
+    padding-top: 50px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+}
+.card .bg_img{
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    border-radius: 100%;
+
+}
+#one{
+    background-image: url('../Images/p1.jpeg');
+   background-position: center center;
+}
+#two{
+    background-image: url('../Images/p2.jpeg');
+   background-position: center center;
+}
+#three{
+    background-image: url('../Images/p3.jpeg');
+   background-position: center center; 
+}
+#four{
+    background-image: url('../Images/p4.jpeg');
+   background-position: center center; 
+}
