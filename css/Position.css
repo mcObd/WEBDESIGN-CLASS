@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+
+}
+.flex_container {
+    width: 400px;
+    margin: 100px auto;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    /* position: relative; */
+}
+.box{
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box:nth-of-type(1){
+    background-color: red;
+}
+.box:nth-of-type(2){
+    background-color: orangered;
+    position: fixed;
+    left: 1200px;
+    bottom: 0px;
+}
+.box:nth-of-type(3){
+    background-color: orange;
+    position: relative;
+    top: 115px;
+    right: 115px;
+
+}
+.box:nth-of-type(4){
+    background-color: lime;
+}
+.box:nth-of-type(5){
+    background-color: green;
+    position: relative;
+    bottom: 115px;
+    left: 115px;
+}
+.box:nth-of-type(6){
+    background-color: blue;
+}
+.box:nth-of-type(7){
+    background-color: blueviolet;
+    position: absolute;
+    top: 500px;
+}
+.box:nth-of-type(8){
+    background-color: purple;
+}
+.box:nth-of-type(9){
+    background-color: rgb(0, 0, 0);
+}
+.flex_container, .dumtext {
+    display: none;
+}
+section{
+    width: 100%;
+    height: 150vh;
+    margin: 0 0 5rem 0;
+}
+header, footer{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+header {
+    font-size: 4rem;
+    position: sticky;
+    top: 0px;
+}
+footer {
+    font-size: 30px;
+    position: sticky;
+    bottom: 0px;
+    color: white;
+}
+.red{
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
