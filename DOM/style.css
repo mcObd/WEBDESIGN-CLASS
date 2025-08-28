@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: darkblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 800px;
+    margin: 5rem;
+    padding: 1rem;
+
+}
+
+.container h1{
+    color: white;
+    padding: 1rem 0;
+}
+.container ul {
+    list-style-type: none;
+}
+.container ul li{
+    background-color: white;
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+
+}
