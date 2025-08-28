@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Event-Listeners/style.css">
+</head>
+<body>
+    <div class="main_container">
+        <h1 id="main_header">Event Listeners</h1>
+        <div class="box_container">
+            <div class="boxes box_1">
+                <h1 id="header">Example 1</h1>
+                <button class="btn_1" onclick="alert('A button was clicked! ')">Click</button>
+            </div>
+            <div class="boxes box_2">
+                <h1 id="header">Example 2</h1>
+                <button class="btn_2">Click</button>
+            </div>
+            <div class="boxes box_3">
+                <h1 id="header">Example 3</h1>
+                <button class="btn_3">Click</button>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="changeInput">
+                    onChange (change the value then click outside the input):
+                  </label>
+                  <input type="text" id="changeInput" placeholder="Change me then click away">
+                  <div id="changeOutput" class="output"></div>
+                  
+                <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="/Event-Listeners/script.js"></script>
+</body>
+</html>
