@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+.menu_content{
+    margin-top: 50px;
+    text-align: center;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.food{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.menu_content h1 {
+    background-color: yellow;
+    height: 120px;
+    color: white;
+    padding-top: 50px;
+}
+.menu_content .items{
+    height: 100px;
+    border: 1px solid black;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.menu_content .items:nth-of-type(4){
+      border: none;
+}
+
+
