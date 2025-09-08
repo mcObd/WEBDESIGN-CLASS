@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Add to Cart</title>
+<link rel="stylesheet" href="all.css" />
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="../../Images/images.jpeg" type="image/x-icon" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+/>
+</head>
+<body>
+<header id="header">
+<div class="container">
+<nav class="navbar">
+<div class="logo">
+<h1>CODE.IO</h1>
+<img src="../../Images/images.jpeg" alt="logo" width="50" height="50" />
+</div>
+<ul class="nav_links">
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<div class="menu">
+<li>
+<a href="#">Home</a>
+</li>
+<li>
+<a href="#">About</a>
+</li>
+<li class="services">
+<a href="#">Services</a>
+<ul class="dropdown">
+<li>
+<a href="#">Dropdown 1</a>
+</li>
+<li>
+<a href="#">Dropdown 2</a>
+</li>
+<li>
+<a href="#">Dropdown 3</a>
+</li>
+<li>
+<a href="#">Dropdown 4</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Pricing</a>
+</li>
+<li>
+<a href="#">Contact</a>
+</li>
+</div>
+</ul>
+
+<div id="cart_icon_wrapper" class="btn">
+<a href="#">
+<i class="fa fa-shopping-cart" id="cart-icon"></i>
+</a>
+<span id="cartCount" class="translate-middle badge">0</span>
+</div>
+
+<div class="cart">
+<h2 class="cart-title">Your Cart</h2>
+<div class="cart-content">
+<div id="info">Your Cart Is Currently Empty</div>
+</div>
+<div class="total">
+<div class="total-title">Total</div>
+<div class="total-price">$0</div>
+</div>
+<button type="button" class="btn-buy">Buy Now</button>
+<i class="fa fa-times" id="close-cart"></i>
+</div>
+</nav>
+</div>
+</header>
+<h1 class="header_text">Our Shop</h1>
+<main>
+<div class="container">
+<div class="main_row">
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/coat1.jpeg" alt="Brown Coat" />
+<figcaption class="product_name">Brown Coat</figcaption>
+<p class="product_price">₦30, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/coat2.jpeg" alt="Black Coat" />
+<figcaption class="product_name">Black Coat</figcaption>
+<p class="product_price">₦25, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/jacket.jpeg" alt="Tracksuit Top" />
+<figcaption class="product_name">tracksuit top</figcaption>
+<p class="product_price">₦18, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/jacket1.jpg" alt="Jean Coat" />
+<figcaption class="product_name">Jean Coat</figcaption>
+<p class="product_price">₦20, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/menWear14.jpg" alt="Blue Cardigan" />
+<figcaption class="product_name">Blue Cardigan</figcaption>
+<p class="product_price">₦15, 500</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/menWear15.webp" alt="Short Stripes" />
+<figcaption class="product_name">Short Stripes</figcaption>
+<p class="product_price">₦12, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/wWear10.png" alt="White top" />
+<figcaption class="product_name">White top</figcaption>
+<p class="product_price">₦10, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/wWear11.png" alt="White shirt" />
+<figcaption class="product_name">White shirt</figcaption>
+<p class="product_price">₦15, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/wWear12.png" alt="Coat Parka" />
+<figcaption class="product_name">Coat Parka</figcaption>
+<p class="product_price">₦45, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/wWear7.png" alt="Sleaky white" />
+<figcaption class="product_name">Sleaky white</figcaption>
+<p class="product_price">₦11, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/wWear8.png" alt="Ash top" />
+<figcaption class="product_name">Ash top</figcaption>
+<p class="product_price">₦10, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+<div class="product_item">
+<figure class="product_img">
+<img src="Images/Images/shoe4.jpeg" alt="White Jordan" />
+<figcaption class="product_name">White Jordan</figcaption>
+<p class="product_price">₦120, 000</p>
+<button class="add_cart_btn">Add to cart</button>
+</figure>
+</div>
+</div>
+</div>
+</main>
+
+<script>
+document
+.querySelector("#cart_icon_wrapper")
+.addEventListener("click", function () {
+document.querySelector(".cart").style.right = "0%";
+});
+
+document
+.querySelector("#close-cart")
+.addEventListener("click", function () {
+document.querySelector(".cart").style.right = "-200%";
+});
+</script>
+<script src="cart_script.js"></script>
+</body>
+</html>
