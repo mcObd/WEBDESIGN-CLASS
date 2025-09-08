@@ -8,9 +8,45 @@ document.querySelector('#saveName').addEventListener("click", function(){
     sessionStorage.setItem("username", name);
     window.alert("Name saved in sessionStorage");
     */
-   localStorage.setItem("username", name);
-    window.alert("Name saved in localStorage");
+    if (!name) {
+        window.alert('Please enter a name before saving.');
+        return;
+    }
+
+    // Read existing array from localStorage (or start empty)
+    let existing = localStorage.getItem('usernames');
+    let names = existing ? JSON.parse(existing) : [];
+    names.push(name);
+    localStorage.setItem('usernames', JSON.stringify(names));
+    window.alert('Name saved in localStorage');
+    document.querySelector('#username').value = '';
     
+
+// Get and display all names
+document.querySelector('#getName').addEventListener('click', function(){
+    const list = document.querySelector('#nameList');
+    list.innerHTML = '';
+    let existing = localStorage.getItem('usernames');
+    if (!existing) {
+        list.innerHTML = '<li>No names saved.</li>';
+        return;
+    }
+    let names = JSON.parse(existing);
+    names.forEach(n => {
+        let li = document.createElement('li');
+        li.textContent = n;
+        list.appendChild(li);
+    });
+});
+
+// Clear storage and UI
+document.querySelector('#clearName').addEventListener('click', function(){
+    // Use clear() to remove all keys from localStorage (per instructions)
+    localStorage.clear();
+    const list = document.querySelector('#nameList');
+    list.innerHTML = '';
+    window.alert('Local storage cleared.');
+});
 })
 
 // Class work
