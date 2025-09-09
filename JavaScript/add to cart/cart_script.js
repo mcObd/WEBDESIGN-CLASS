@@ -5,6 +5,8 @@ const cartContentElement = document.querySelector(".cart-content");
 let cartItemCount = 0;
 let cart = [];
 
+
+// Adding items to cart
 allAddToCartBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         const productItem = btn.closest('.product_item');
@@ -49,5 +51,49 @@ allAddToCartBtns.forEach(btn => {
                 </div>
             </div>`;
         cartContentElement.insertAdjacentHTML("beforeend", cartContent);
+        updateTotal();
     });
+});
+
+// Changing the quantity value
+cartContentElement.addEventListener("change", event=>{
+    if (event.target.classList.contains("cart-quantity")) {
+        const newQuantity = parseInt(event.target.value);
+        const cartBox =  event.target.closest(".cart-box");
+        const productName = cartBox.querySelector('.cart-product-title').innerText.toLowerCase();
+        const productindex = cart.findIndex(product => product.name === productName);
+        if (productindex !== -1) {
+            let product = cart[productindex];
+            product.quantity = newQuantity;
+            // console.log(product);
+            updateTotal();
+        }
+    }
+})
+
+// find the total price for all items that has been added to cart
+function updateTotal() {
+    let total = 0;
+    cart.forEach(product => {
+        total += parseFloat(product.price.replace(/[₦, ]/g, "")) * product.quantity;
+    });
+    document.querySelector(".total-price").innerText = `₦${total.toLocaleString()}`;
+}
+
+
+// Removing items from cart
+cartContentElement.addEventListener("click", event => {
+    if (event.target.classList.contains('cart-remove')) {
+        const cartBox = event.target.closest(".cart-box");
+        const productName = cartBox.querySelector('.cart-product-title').innerText.trim().toLowerCase();
+        const productindex = cart.findIndex(product => product.name === productName);
+        if (productindex !== -1) {
+            cart.splice(productindex, 1);
+            cartBox.remove();
+            alert(`${productName} has been successfully removed from the cart`);
+            cartItemCount = cart.length;
+            cartCountElement.innerText = cartItemCount;
+            updateTotal();
+        }
+    }
 });
