@@ -1,0 +1,334 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .polysite-gallery-page {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Header Section */
+        .polysite-gallery-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background-color: #f8f9fa;
+        }
+
+        .polysite-gallery-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .polysite-gallery-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Featured Products Section */
+        .polysite-featured-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .polysite-featured-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+        }
+
+        .polysite-products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .polysite-product-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .polysite-product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .polysite-product-image {
+            width: 100%;
+            max-width: 150px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .polysite-product-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .polysite-product-specs {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+
+        .polysite-product-price {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2563eb;
+            margin-top: 15px;
+        }
+
+        .polysite-contact-quote {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2563eb;
+            margin-top: 15px;
+        }
+
+        /* Sustainability Section */
+        .polysite-sustainability-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .polysite-sustainability-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .polysite-sustainability-title {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #1a1a1a;
+        }
+
+        .polysite-sustainability-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .polysite-sustainability-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Manufacturing Gallery Section */
+        .polysite-manufacturing-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .polysite-manufacturing-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .polysite-manufacturing-subtitle {
+            text-align: center;
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .polysite-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .polysite-gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .polysite-gallery-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Our Products Section */
+        .polysite-our-products-section {
+            padding: 60px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .polysite-our-products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .polysite-our-products-title {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .polysite-our-products-subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .polysite-categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .polysite-category-card {
+            border-radius: 8px;
+            padding: 40px 30px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s;
+        }
+
+        .polysite-category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .polysite-category-card.pet-bottles {
+            background-color: #b8c7e0;
+        }
+
+        .polysite-category-card.pp-bottles {
+            background-color: #6b7280;
+            color: #fff;
+        }
+
+        .polysite-category-card.pc-bottles {
+            background-color: #c8e6c9;
+        }
+
+        .polysite-category-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .polysite-category-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .polysite-category-image-wrapper {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .polysite-category-image {
+            width: 100%;
+            max-width: 180px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        /* View More Button */
+        .polysite-view-more-btn {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .polysite-view-more-btn:hover {
+            background-color: #333;
+        }
+
+        .polysite-btn-container {
+            text-align: left;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .polysite-sustainability-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .polysite-gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .polysite-gallery-header h1 {
+                font-size: 2rem;
+            }
+
+            .polysite-featured-title,
+            .polysite-sustainability-title,
+            .polysite-manufacturing-title,
+            .polysite-our-products-title {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .polysite-products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .polysite-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .polysite-categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .polysite-gallery-header {
+                padding: 40px 20px 30px;
+            }
+
+            .polysite-gallery-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .polysite-featured-section,
+            .polysite-manufacturing-section,
+            .polysite-our-products-section {
+                padding: 40px 20px;
+            }
+
+            .polysite-category-card {
+                min-height: 350px;
+            }
+        }
